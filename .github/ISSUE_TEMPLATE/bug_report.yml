@@ -1,5 +1,5 @@
 name: 🐛 问题报告 Bug Report
-description: 你发现了某个问题需要进行改进 Report defects to help us improve
+description: 你发现了某个问题需要进行改进 
 title: "请输入问题报告标题 Please enter the title of the bug report"
 body:
   - type: checkboxes
