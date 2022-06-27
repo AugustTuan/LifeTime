@@ -14,16 +14,15 @@ body:
       label: 如何评价今天？ How would you evaluate today?
       description: |
         请客观评价今天的心情、状态、工作效率。
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-     label: 版本环境 Version environment
-      value: |
+        value: |
         - Version: 
         - Operating System: 
         - Browser (if used):
       render: markdown
+    validations:
+      required: true
+  - type: textarea
+    attributes:
       label: 今天有何收获？ Do you have any harvest today?
       description: |
         请描述你今天的成果和所得
