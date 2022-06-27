@@ -11,14 +11,14 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 如何评价今天？ How would you rate today?
+      label: 如何评价今天？ How would you evaluate today?
       description: |
         请客观评价今天的心情、状态、工作效率。
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 今天有何收获？ What's the catch today?
+      label: 今天有何收获？ Do you have any harvest today?
       description: |
         请描述你今天的成果和所得
     validations:
