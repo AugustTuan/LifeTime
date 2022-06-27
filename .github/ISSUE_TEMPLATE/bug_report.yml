@@ -1,5 +1,5 @@
-name: 🐛 缺陷报告 Bug Report
-description: 报告缺陷以帮助我们进行改进 Report defects to help us improve
+name: 🐛 问题报告 Bug Report
+description: 报告缺陷以帮助我进行改进 Report defects to help us improve
 title: "请输入问题报告标题 Please enter the title of the bug report"
 body:
   - type: checkboxes
@@ -27,24 +27,6 @@ body:
       description: |
         请尽量清晰地描述你所期待的结果。
         Please be as clear and accurate as possible to describe the results you are looking for.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: 截屏或者录屏演示 Screenshot or screen recording presentation
-      description: |
-        请通过截屏或者录屏演示你碰到的问题。
-        Please try to attach screenshots or videos to describe the problem you are experiencing.
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: 版本环境 Version environment
-      value: |
-        - Version: 
-        - Operating System: 
-        - Browser (if used):
-      render: markdown
     validations:
       required: true
   - type: textarea
