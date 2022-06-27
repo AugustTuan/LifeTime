@@ -14,7 +14,6 @@ body:
       label: 如何评价今天？ Describe the optimal solution
       description: |
         请客观评价今天的心情、状态、工作效率。
-        Please try to describe the best solution. There may be similar software that implements this feature. Please also list it for our reference.
     validations:
       required: true
   - type: textarea
