@@ -4,31 +4,29 @@ title: "请输入日记标题标题 Please enter the title of the feature reques
 body:
   - type: textarea
     attributes:
-      label: 今天的目标是什么？In what scenarios do you need this feature?
+      label: 今天的目标是什么？What is the goal today?
       description: |
         请尽量清晰地描述今天的任务（任务要具体，有截止时间，难度要匹配你现在的能力
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 如何评价今天？ Describe the optimal solution
+      label: 如何评价今天？ How would you rate today?
       description: |
         请客观评价今天的心情、状态、工作效率。
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 今天有何收获？ Describe the candidate solution
+      label: 今天有何收获？ What's the catch today?
       description: |
         请描述你今天的成果和所得
-        Please describe the candidate solutions you can accept as clearly and accurately as possible.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: 你还有什么要说的？ Other information
+      label: 你还有什么要说的？ Please share your other thoughts 
       description: |
         讲讲你今天的感悟和杂念
-        Please provide any additional information about this feature suggestion.
     validations:
       required: false
