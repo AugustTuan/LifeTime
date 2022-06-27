@@ -7,7 +7,6 @@ body:
       label: 今天的目标是什么？In what scenarios do you need this feature?
       description: |
         请尽量清晰地描述今天的任务（任务要具体，有截止时间，难度要匹配你现在的能力
-        Please describe the functions and application scenarios you expect as clearly and accurately as possible.
     validations:
       required: true
   - type: textarea
