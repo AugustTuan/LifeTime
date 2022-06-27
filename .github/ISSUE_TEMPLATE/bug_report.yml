@@ -1,5 +1,5 @@
 name: 🐛 问题报告
-description: 你发现了某个问题需要进行改进 
+description: 发现问题需要进行改进 
 title: "请输入问题报告标题"
 body:
   - type: checkboxes
