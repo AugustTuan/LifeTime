@@ -1,6 +1,6 @@
-name: ✨ 发起提议 Request new features
+name: ✨ 发起提议 
 description: 你提出了某个目标或者想法 
-title: "请输入提议标题 Please enter the title of the feature request"
+title: "请输入提议标题"
 body:
   - type: textarea
     attributes:
