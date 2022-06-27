@@ -1,4 +1,4 @@
-name: ✨ 发布一篇日记 Post a diary
+name: 📑 发布一篇日记 Post a diary
 description: 开始发布新一天的记录 Start posting a new day's record
 title: "请输入日记标题（时间-主要 事件/成果-情绪/状态）"
 body:
@@ -13,10 +13,14 @@ body:
     attributes:
       label: 如何评价今天？ How would you evaluate today?
       value: |
-        - 早上
+        - 早上:
+        
         - 下午: 
+        
         - 晚上:
-        - 总结：
+        
+        - 总结:
+        
       render: markdown
       description: |
         请客观评价今天的心情、状态、工作效率。
