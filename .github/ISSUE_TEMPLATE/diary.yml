@@ -1,18 +1,18 @@
-name: ✨ 特性提议 Request new features
-description: 欢迎提出你所期待的新特性 Come up with the features you expected
-title: "请输入特性提议标题 Please enter the title of the feature request"
+name: ✨ 发布一篇日记 Request new features
+description: 开始发布新的一天的记录 Come up with the features you expected
+title: "请输入日记标题标题 Please enter the title of the feature request"
 body:
   - type: textarea
     attributes:
-      label: 在什么情况下你需要该特性？In what scenarios do you need this feature?
+      label: 今天的目标是什么？In what scenarios do you need this feature?
       description: |
-        请尽量清晰地描述该特性的应用场景。
+        请尽量清晰地描述今天的任务，记住要具体，携带时间，难度要匹配你现在的能力与精力
         Please describe the functions and application scenarios you expect as clearly and accurately as possible.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 描述可能的最优解决方案 Describe the optimal solution
+      label: 如何评价今天？ Describe the optimal solution
       description: |
         请描述你能想到的最优解决方案。也有有些类似软件已经实现了该特性，请列出以供我们参考。
         Please try to describe the best solution. There may be similar software that implements this feature. Please also list it for our reference.
