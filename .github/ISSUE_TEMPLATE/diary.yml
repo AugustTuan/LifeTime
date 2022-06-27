@@ -18,6 +18,12 @@ body:
       required: true
   - type: textarea
     attributes:
+     label: 版本环境 Version environment
+      value: |
+        - Version: 
+        - Operating System: 
+        - Browser (if used):
+      render: markdown
       label: 今天有何收获？ Do you have any harvest today?
       description: |
         请描述你今天的成果和所得
