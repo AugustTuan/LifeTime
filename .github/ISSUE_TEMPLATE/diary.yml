@@ -13,7 +13,8 @@ body:
     attributes:
       label: 如何评价今天？ How would you evaluate today?
       value: |
-        - 早上: 
+        - ## 早上
+        - -
         - 下午: 
         - 晚上:
         - 总结：
