@@ -13,28 +13,35 @@ body:
             我已经搜索了 Issues，没有发现类似问题 
             I have searched the existing issues
           required: true
+  - type: textarea
     attributes:
       label: 描述问题 Describe the problem
       description: |
         请尽量清晰地描述你遇到的问题，并确认能够在默认主题下重现该问题。
+        Please describe the problem you are experiencing as clearly as possible and confirm that you can reproduce the problem with the default theme.
+    validations:
       required: true
   - type: textarea
     attributes:
       label: 期待的结果 Expected result
       description: |
         请尽量清晰地描述你所期待的结果。
+        Please be as clear and accurate as possible to describe the results you are looking for.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 解决方案 Solution
+      label: 日志文件 Log file
       description: |
-        请描述问题的最终解决方案
+        请提供内核日志 `工作空间/temp/siyuan.log`
+        The program log file is located at `workspace/temp/siyuan.log`
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 参考&更多信息 More information
+      label: 更多信息 More information
       description: |
-        请提供任何附加信息，以帮助我们更好处理问题。
+        请提供任何附加信息，以帮助我们更好地定位问题。
+        Please provide other additional information to help us diagnose the problem.
+    validations:
       required: false
