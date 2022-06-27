@@ -10,7 +10,6 @@ body:
       options:
         - label: |
             我已经搜索了 Issues，没有发现类似问题 
-            I have searched the existing issues
           required: true
   - type: textarea
     attributes:
