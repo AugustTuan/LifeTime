@@ -1,5 +1,5 @@
 name: ✨ 发起提议 Request new features
-description: 欢迎提出你所期待的新特性 Come up with the features you expected
+description: 你提出了某个目标或者想法 Come up with the features you expected
 title: "请输入提议标题 Please enter the title of the feature request"
 body:
   - type: textarea
