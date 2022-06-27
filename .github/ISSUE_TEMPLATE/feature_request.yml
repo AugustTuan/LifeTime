@@ -18,7 +18,14 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 描述候选的实现方案 Describe the implementation steps
+      label: 你觉得你可以完成这个提议吗？can you complete this task？
+      description: |
+        请分析这个提议的可行性
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 描述该提议的实现方案 Describe the implementation steps
       description: |
         请记录为了实现这个提议需要经历的步骤
     validations:
