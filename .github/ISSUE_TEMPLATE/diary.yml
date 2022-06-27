@@ -1,5 +1,5 @@
 name: 📑 发布一篇日记 Post a diary
-description: 开始发布新一天的记录 Start posting a new day's record
+description: 发布新一天的记录 
 title: "请输入日记标题（时间-主要 事件/成果-情绪/状态）"
 body:
   - type: textarea
