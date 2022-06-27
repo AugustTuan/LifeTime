@@ -6,7 +6,7 @@ body:
     attributes:
       label: 今天的目标是什么？In what scenarios do you need this feature?
       description: |
-        请尽量清晰地描述今天的任务，记住要具体，携带时间，难度要匹配你现在的能力与精力
+        请尽量清晰地描述今天的任务（任务要具体，有截止时间，难度要匹配你现在的能力
         Please describe the functions and application scenarios you expect as clearly and accurately as possible.
     validations:
       required: true
@@ -14,23 +14,23 @@ body:
     attributes:
       label: 如何评价今天？ Describe the optimal solution
       description: |
-        请描述你能想到的最优解决方案。也有有些类似软件已经实现了该特性，请列出以供我们参考。
+        请客观评价今天的心情、状态、工作效率。
         Please try to describe the best solution. There may be similar software that implements this feature. Please also list it for our reference.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 描述候选的解决方案 Describe the candidate solution
+      label: 今天有何收获？ Describe the candidate solution
       description: |
-        请描述你能想到的候选解决方案。
+        请描述你今天的成果和所得
         Please describe the candidate solutions you can accept as clearly and accurately as possible.
     validations:
       required: false
   - type: textarea
     attributes:
-      label: 其他信息 Other information
+      label: 你还有什么要说的？ Other information
       description: |
-        请提供任何附加信息，以帮助我们更好地理解该特性和解决方案。
+        讲讲你今天的感悟和杂念
         Please provide any additional information about this feature suggestion.
     validations:
       required: false
