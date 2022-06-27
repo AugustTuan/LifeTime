@@ -4,16 +4,16 @@ title: "请输入提议标题 Please enter the title of the feature request"
 body:
   - type: textarea
     attributes:
-      label: 在什么情况下你需要该特性？In what scenarios do you need this feature?
+      label: 请描述你的提议 Please describe your proposal
       description: |
         请尽量清晰地描述该特性的应用场景。
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 描述可能的最优解决方案 Describe the optimal solution
+      label: 你发起提议的动机是什么？What was your motivation for making the request?
       description: |
-        请描述你能想到的最优解决方案。也有有些类似软件已经实现了该特性，请列出以供我们参考。
+        请描述你能想到的提出提议的动机。
     validations:
       required: true
   - type: textarea
