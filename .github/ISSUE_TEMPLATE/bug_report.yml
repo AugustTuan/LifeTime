@@ -7,7 +7,6 @@ body:
       label: 该问题是否已经被报告过了？ Is there an existing issue for this?
       description: |
         请搜索以查看你遇到的问题是否已经被报告过。
-        Please search to see if an issue already exists for the bug you encountered.
       options:
         - label: |
             我已经搜索了 Issues，没有发现类似问题 
