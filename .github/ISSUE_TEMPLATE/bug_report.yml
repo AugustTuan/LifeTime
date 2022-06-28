@@ -31,7 +31,7 @@ body:
       description: |
         请描述问题的最终解决方案
     validations:
-      required: true
+      required: false
   - type: textarea
     attributes:
       label: 参考信息 Reference information
