@@ -18,7 +18,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 你觉得你可以完成这个提议吗？can you complete this task？
+      label: 这个提议困难吗？难点在哪里？can you complete this task？
       description: |
         请分析这个提议的可行性
     validations:
