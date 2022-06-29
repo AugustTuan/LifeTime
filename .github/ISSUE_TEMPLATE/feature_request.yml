@@ -4,7 +4,7 @@ title: "请输入提议标题"
 body:
   - type: textarea
     attributes:
-      label: 请描述你的提议
+      label: 请描述你的提议  Please describe your proposal
       description: |
         请尽量清晰地描述该特性的应用场景。
     validations:
