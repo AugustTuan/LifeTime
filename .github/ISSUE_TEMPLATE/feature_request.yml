@@ -1,6 +1,7 @@
 name: ✨ 发起一次尝试/探索 
 description: 提出想要实现的目标或者想法 
 title: "请输入提议标题"
+labels: "Explore"
 body:
   - type: textarea
     attributes:
