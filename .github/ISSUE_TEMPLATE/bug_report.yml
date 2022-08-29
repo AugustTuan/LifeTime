@@ -1,7 +1,7 @@
 name: 🐛 问题报告
 description: 发现问题需要进行改进 
-title: "请输入问题报告标题"
-labels: bug
+title: "你遇到了什么问题？"
+labels: "bug"
 body:
   - type: checkboxes
     attributes:
