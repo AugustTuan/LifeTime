@@ -28,7 +28,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 解决方案 Solution
+      label: 解决方案/结论 Solution/conclusion
       description: |
         请描述问题的最终解决方案
     validations:
