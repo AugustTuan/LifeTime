@@ -1,7 +1,7 @@
 name: 📑 开始今天的复盘
 description: 对今天的任务完成情况，目标进度，事件，情绪 进行记录和评价，以便动态的调整自己的行为
 title: "请输入日记标题（时间-主要 事件/成果-情绪/状态）"
-labels: "Diary"
+labels: "Review"
 body:
   - type: textarea
     attributes:
