@@ -1,0 +1,103 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2015-2023. All rights reserved.
+ */
+
+package com.huawei.ppm.core.bean;
+
+import com.huawei.it.jalor5.core.request.IUserPrincipal;
+import com.huawei.it.jalor5.core.request.impl.RequestContext;
+import com.huawei.it.jalor5.security.UserVO;
+
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+
+import lombok.Data;
+
+import java.sql.Timestamp;
+import java.util.Date;
+
+/**
+ * 数据库表的基础类，定义所有的表都应该具备的字段。
+ *
+ * @author ppm
+ * @since 2020-09-19
+ */
+@Data
+public class BaseEntity {
+    /**
+     * 主键ID
+     */
+    private Long id;
+
+    /**
+     * 创建人UUID
+     */
+    @TableField(fill = FieldFill.INSERT)
+    private String createdBy;
+
+    /**
+     * 创建时间
+     */
+    @TableField(fill = FieldFill.INSERT)
+    private Date creationDate;
+
+    /**
+     * 最后更新人UUID
+     */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private String lastUpdatedBy;
+
+    /**
+     * 最后更新时间
+     */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private Date lastUpdateDate;
+
+    /**
+     * 补充创建人信息，创建时调用
+     */
+    public void fillCreateInfo() {
+        creationDate = new Timestamp(new Date().getTime());
+        createdBy = getLoginUserId();
+        lastUpdateDate = creationDate;
+        lastUpdatedBy = createdBy;
+    }
+
+    /**
+     * 补充更新人信息，更新时调用
+     */
+    public void fillUpdateInfo() {
+        lastUpdateDate = new Timestamp(new Date().getTime());
+        lastUpdatedBy = getLoginUserId();
+    }
+
+    private String getLoginUserId() {
+        IUserPrincipal user = RequestContext.getCurrent().getUser();
+        if (user == null) {
+            return null;
+        }
+
+        if (user instanceof UserVO) {
+            UserVO userVO = (UserVO) user;
+            return userVO.getUuid();
+        }
+
+        return user.getUserAccount();
+    }
+
+    public Date getCreationDate() {
+        return creationDate != null ? (Date) creationDate.clone() : null;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate != null ? (Date) creationDate.clone() : null;
+    }
+
+    public Date getLastUpdateDate() {
+        return lastUpdateDate != null ? (Date) lastUpdateDate.clone() : null;
+    }
+
+    public void setLastUpdateDate(Date lastUpdateDate) {
+        this.lastUpdateDate = lastUpdateDate != null ? (Date) lastUpdateDate.clone() : null;
+    }
+}
